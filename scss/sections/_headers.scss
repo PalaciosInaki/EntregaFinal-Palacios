@@ -1,0 +1,19 @@
+/* ///////////////////////HEADERS//////////////////////////////////*/
+.headers h1 {
+    height: 135px;
+    padding-top: 45px;
+    color: white;
+    background-image: url(https://i.redd.it/69e5cqczbrda1.png);
+    text-align: center;
+    font-family: "Jersey 25", sans-serif;
+}
+
+/* header index-main con boostrap (piso valores) para que quede igual que los otros html sin boostrap*/
+.index-main .headers h1 {
+    margin-bottom: 0px;
+    height: 135px;
+    font-size: 32px;
+    font-weight: bold;
+
+
+}

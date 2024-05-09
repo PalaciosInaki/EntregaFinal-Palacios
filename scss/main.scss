@@ -1,9 +1,12 @@
 /* Utilidades (Vars ------ Reset */
-
+@import './utilities/fonts';
+@import './utilities/colors';
 @import './utilities/reset';
 
-
-
-
 /* Secciones */
+@import './sections/h1global';
 @import './sections/nav';
+@import './sections/productos';
+@import './sections/ingresos';
+@import './sections/footer';
+@import './sections/headers';

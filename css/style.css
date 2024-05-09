@@ -1,5 +1,17 @@
 /* Utilidades (Vars ------ Reset */
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
 /* Secciones */
+/* /////////////////////////////H1 global////////////////////////////////////////// */
+h1 {
+  font-family: "Jersey 25", sans-serif !important;
+  color: white; }
+
 /* //////////////////////////////Navegacion ///////////////////////////////*/
 .container-navbar {
   background-color: black;
@@ -22,7 +34,8 @@
     justify-content: space-between;
     /* Piso valores de bootstrap de padding y margin */
     padding-left: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    height: 180px; }
     .container-navbar .links li {
       display: inline-block;
       padding: 15px; }
@@ -32,7 +45,11 @@
         text-decoration: none;
         font-weight: bold;
         color: white; }
-      .container-navbar .links li ul .dropdown-menu li a {
+      .container-navbar .links li .dropdown .dropdown-menu li a {
+        font-family: "Jersey 25", sans-serif !important;
+        font-size: 140%;
+        text-decoration: none;
+        font-weight: bold;
         color: black; }
   .container-navbar .busqueda {
     grid-area: busqueda;
@@ -43,7 +60,11 @@
     margin: auto; }
     .container-navbar .busqueda input {
       outline: none;
-      border: none; }
+      border: none;
+      height: 32px;
+      width: 200px;
+      font-style: "Poppins", sans-serif;
+      font-size: 1rem; }
     .container-navbar .busqueda button {
       background-color: black;
       border-radius: 10px; }
@@ -51,21 +72,101 @@
         height: 28px;
         width: 28px; }
 
-/* nav img {
-    width: 300px;
-    height: 180px;
-    display: inline-block;
+/*////////////// //////////////Medias querys ///////////////////////////// */
+/* Mobile last /// Max Width */
+@media (max-width: 915px) {
+  .container-navbar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo links" "busqueda busqueda"; } }
 
-}
+@media (max-width: 715px) {
+  .container-navbar {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "links" "busqueda"; }
+  .container-navbar .logo {
+    margin: auto; } }
 
-nav li {
-    display: inline-block;
-    padding: 15px;
-}
+/* ///////////////////////Productos//////////////////////////////////*/
+.productos-main .productos {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .productos-main .productos .prod {
+    width: 350px;
+    text-align: center;
+    border-radius: 10%;
+    padding: 3%;
+    margin: 2%;
+    /*Sombra Caja Primeros dos valores abajo e izquierda, tercer valor difuminado */
+    box-shadow: 5px 5px 50px; }
+    .productos-main .productos .prod img {
+      height: 280px; }
+    .productos-main .productos .prod button {
+      background-color: aqua;
+      font-family: "Jersey 25", sans-serif;
+      font-size: medium;
+      border-radius: 5px;
+      height: 30px;
+      width: 100px;
+      margin-top: 15px; }
 
-nav li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+/*///////////////////////// Inicio////////////////////////////////////// */
+.ingresos .row .ing img {
+  height: 250px;
+  width: 250px; }
 
-} */
+/* /////////////////////////////// Footer////////////////////////////// */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "links-f logo-f redes";
+  background-color: #f0ebd6; }
+
+.logo-f {
+  grid-area: logo-f;
+  margin: auto; }
+
+.logo-f img {
+  height: 180px;
+  width: 200px; }
+
+.links-f {
+  grid-area: links-f;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none !important;
+  font-weight: bold;
+  color: black;
+  margin: auto; }
+
+.redes {
+  grid-area: redes;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto; }
+
+.redes a img {
+  width: 40px;
+  height: 40px; }
+
+/* ///////////////////////HEADERS//////////////////////////////////*/
+.headers h1 {
+  height: 135px;
+  padding-top: 45px;
+  color: white;
+  background-image: url(https://i.redd.it/69e5cqczbrda1.png);
+  text-align: center;
+  font-family: "Jersey 25", sans-serif; }
+
+/* header index-main con boostrap (piso valores) para que quede igual que los otros html sin boostrap*/
+.index-main .headers h1 {
+  margin-bottom: 0px;
+  height: 135px;
+  font-size: 32px;
+  font-weight: bold; }

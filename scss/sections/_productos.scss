@@ -1,0 +1,37 @@
+/* ///////////////////////Productos//////////////////////////////////*/
+
+.productos-main {
+    .productos {
+        display: flex;
+        flex-direction: row;
+        min-height: 400px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .prod {
+            width: 350px;
+            text-align: center;
+            border-radius: 10%;
+            padding: 3%;
+            margin: 2%;
+            /*Sombra Caja Primeros dos valores abajo e izquierda, tercer valor difuminado */
+            box-shadow: 5px 5px 50px;
+
+            img {
+                height: 280px;
+            }
+
+            button {
+                background-color: aqua;
+                font-family: "Jersey 25", sans-serif;
+                font-size: medium;
+                border-radius: 5px;
+                height: 30px;
+                width: 100px;
+                margin-top: 15px;
+            }
+
+        }
+    }
+}

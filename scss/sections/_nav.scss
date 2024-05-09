@@ -1,5 +1,4 @@
 /* //////////////////////////////Navegacion ///////////////////////////////*/
-
 .container-navbar {
     background-color: black;
     display: grid;
@@ -28,6 +27,7 @@
         /* Piso valores de bootstrap de padding y margin */
         padding-left: 0px;
         margin-bottom: 0px;
+        height: 180px;
 
         li {
             display: inline-block;
@@ -41,10 +41,14 @@
                 color: white;
             }
 
-            ul {
-                .dropdown-menu {
+            .dropdown{
+                .dropdown-menu{
                     li {
                         a {
+                            font-family: "Jersey 25", sans-serif !important;
+                            font-size: 140%;
+                            text-decoration: none;
+                            font-weight: bold;
                             color: black;
                         }
                     }
@@ -69,6 +73,10 @@
         input {
             outline: none;
             border: none;
+            height: 32px;
+            width: 200px;
+            font-style: $fuente-secundaria;
+            font-size: 1rem;
         }
 
         button {
@@ -84,23 +92,37 @@
 
 }
 
+/*////////////// //////////////Medias querys ///////////////////////////// */
+/* Mobile last /// Max Width */
+
+@media (max-width: 915px) {
+    .container-navbar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo links"
+            "busqueda busqueda"
+        ;
+
+    }
 
 
-/* nav img {
-    width: 300px;
-    height: 180px;
-    display: inline-block;
 
 }
 
-nav li {
-    display: inline-block;
-    padding: 15px;
+@media (max-width: 715px) {
+    .container-navbar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "links"
+            "busqueda"
+        ;
+
+    }
+
+    .container-navbar .logo {
+        margin: auto;
+    }
+
+
 }
-
-nav li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-
-} */
