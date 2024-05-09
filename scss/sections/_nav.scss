@@ -95,13 +95,18 @@
 /*////////////// //////////////Medias querys ///////////////////////////// */
 /* Mobile last /// Max Width */
 
-@media (max-width: 915px) {
+@media (max-width: 965px) {
     .container-navbar {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "logo links"
             "busqueda busqueda"
         ;
+        .busqueda{
+            input{
+                width: 600px;
+            }
+        }
 
     }
 
@@ -117,12 +122,54 @@
             "links"
             "busqueda"
         ;
+        .logo {
+            margin: auto;
+        }
 
     }
 
-    .container-navbar .logo {
-        margin: auto;
+}
+
+@media (max-width: 655px) {
+    .container-navbar{
+        .busqueda{
+            input{
+                width: 350px;
+            }
+        }
+
     }
 
+
+}
+
+@media (max-width: 435px) {
+    .container-navbar{
+        .links{
+            li{
+                padding: 4px;
+            }
+        }
+
+        .busqueda {
+            input{
+                width: 200px;
+            }
+        }
+
+     
+    }
+
+}
+
+@media (max-width: 345px) {
+    .container-navbar{
+        .links{
+            li{
+                padding: 1px;
+            }
+        }
+
+    }
 
 }
