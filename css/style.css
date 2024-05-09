@@ -183,8 +183,8 @@ h1 {
     width: 50%;
     text-align: justify;
     margin: auto;
-    font-size: 120%; }
-    .container-nosotros .texto-nos h3 {
+    font-size: 100%; }
+    .container-nosotros .texto-nos h2 {
       text-align: center; }
   .container-nosotros .mapa {
     margin: auto;
@@ -197,3 +197,16 @@ h1 {
 @media (max-width: 680px) {
   .container-nosotros .mapa iframe {
     width: auto; } }
+
+.container-formulario {
+  text-align: center;
+  padding: 40px;
+  margin: auto; }
+  .container-formulario .formulario {
+    padding: 30px;
+    display: flex;
+    justify-content: center; }
+    .container-formulario .formulario .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }

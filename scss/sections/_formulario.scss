@@ -1,0 +1,17 @@
+.container-formulario{
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    .formulario{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    }
+
+}
