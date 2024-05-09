@@ -1,0 +1,39 @@
+/* Nosotros */
+.container-nosotros{
+    display: flex;
+    flex-direction: column;
+    .texto-nos{
+        padding: 40px;
+        width: 50%;
+        text-align: justify;
+        margin: auto;
+        font-size: 120%;
+        h3{
+            text-align: center;
+        }
+    }
+    .mapa{
+        margin: auto;
+        padding: 40px;
+
+    }
+}
+
+@media (max-width: 1100px){
+    .container-nosotros{
+        .texto-nos{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 680px){
+    .container-nosotros{
+        .mapa{
+            iframe{
+                width: auto;
+            }
+        }
+    }
+
+}
