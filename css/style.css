@@ -1,5 +1,6 @@
 /* Utilidades (Vars ------ Reset */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Colores */
 * {
   padding: 0;
   margin: 0;
@@ -87,6 +88,13 @@ h1 {
     margin: auto; } }
 
 /* ///////////////////////Productos//////////////////////////////////*/
+.productos-main h2 {
+  text-align: center;
+  padding-top: 40px; }
+
+.productos-main h3 {
+  text-align: center; }
+
 .productos-main .productos {
   display: flex;
   flex-direction: row;
@@ -96,17 +104,16 @@ h1 {
   align-items: center; }
   .productos-main .productos .prod {
     width: 350px;
+    height: 485px;
     text-align: center;
-    border-radius: 10%;
     padding: 3%;
-    margin: 2%;
-    /*Sombra Caja Primeros dos valores abajo e izquierda, tercer valor difuminado */
-    box-shadow: 5px 5px 50px; }
+    margin: 2%; }
     .productos-main .productos .prod img {
       height: 280px; }
     .productos-main .productos .prod button {
-      background-color: aqua;
-      font-family: "Jersey 25", sans-serif;
+      background-color: black;
+      font-family: "Poppins", sans-serif;
+      color: #9FCC2E;
       font-size: medium;
       border-radius: 5px;
       height: 30px;
@@ -124,7 +131,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
   grid-template-areas: "links-f mencion redes";
-  background-color: #f0ebd6; }
+  background-color: #9FCC2E; }
   .footer .mencion {
     grid-area: mencion;
     display: flex;
@@ -198,6 +205,7 @@ h1 {
   .container-nosotros .mapa iframe {
     width: auto; } }
 
+/* Formulario */
 .container-formulario {
   text-align: center;
   padding: 40px;
