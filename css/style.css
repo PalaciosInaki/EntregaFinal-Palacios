@@ -206,7 +206,8 @@ h1 {
     margin: auto;
     font-size: 100%; }
     .container-nosotros .texto-nos h2 {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 30px; }
   .container-nosotros .mapa {
     margin: auto;
     padding: 40px; }
@@ -237,7 +238,7 @@ h1 {
 #carouselExampleIndicators {
   padding-top: 40px; }
   #carouselExampleIndicators .carousel {
-    /*  width: 700px; */
+    width: 700px;
     margin: auto; }
   #carouselExampleIndicators .carousel-item img {
     height: auto; }
