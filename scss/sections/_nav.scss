@@ -23,7 +23,7 @@
         grid-area: links;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         /* Piso valores de bootstrap de padding y margin */
         padding-left: 0px;
         margin-bottom: 0px;
@@ -51,7 +51,6 @@
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
-        margin: auto;
 
         input {
             outline: none;
@@ -86,8 +85,11 @@
             "busqueda busqueda"
         ;
         .busqueda{
+            margin: auto;
+            padding-bottom: 30px;
             input{
-                width: 600px;
+                width: 500px;
+            
             }
         }
 
@@ -117,7 +119,7 @@
     .container-navbar{
         .busqueda{
             input{
-                width: 350px;
+                width: 400px;
             }
         }
 

@@ -32,7 +32,7 @@ h1 {
     grid-area: links;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* Piso valores de bootstrap de padding y margin */
     padding-left: 0px;
     margin-bottom: 0px;
@@ -51,8 +51,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
-    margin: auto; }
+    align-items: center; }
     .container-navbar .busqueda input {
       outline: none;
       border: none;
@@ -73,8 +72,11 @@ h1 {
   .container-navbar {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo links" "busqueda busqueda"; }
-    .container-navbar .busqueda input {
-      width: 600px; } }
+    .container-navbar .busqueda {
+      margin: auto;
+      padding-bottom: 30px; }
+      .container-navbar .busqueda input {
+        width: 500px; } }
 
 @media (max-width: 715px) {
   .container-navbar {
@@ -85,7 +87,7 @@ h1 {
 
 @media (max-width: 655px) {
   .container-navbar .busqueda input {
-    width: 350px; } }
+    width: 400px; } }
 
 @media (max-width: 435px) {
   .container-navbar .links li {
