@@ -46,12 +46,6 @@ h1 {
         text-decoration: none;
         font-weight: bold;
         color: white; }
-      .container-navbar .links li .dropdown .dropdown-menu li a {
-        font-family: "Jersey 25", sans-serif !important;
-        font-size: 140%;
-        text-decoration: none;
-        font-weight: bold;
-        color: black; }
   .container-navbar .busqueda {
     grid-area: busqueda;
     display: flex;
@@ -137,6 +131,13 @@ h1 {
       margin-top: 15px; }
 
 /*///////////////////////// Inicio////////////////////////////////////// */
+.ingresos h2 {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  border-bottom: 2px solid #000; }
+
 .ingresos .row .ing {
   padding-bottom: 40px;
   padding-top: 40px; }
@@ -257,4 +258,4 @@ h1 {
     width: 700px;
     margin: auto; }
   #carouselExampleIndicators .carousel-item img {
-    max-height: 350px; }
+    max-height: 700px; }

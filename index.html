@@ -28,15 +28,7 @@
         <ul class="links">
             <!-- Link items -->
             <li><a href="./index.html">Inicio</a></li>
-            <!-- Dropdown con bootstrap  /////  Por ahora todos los href son a productos-->
-            <li class="dropdown"><a class="dropdown-toggle" href="./pages/productos.html" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-placa" href="./pages/productos.html">Placas de video</a></li>
-                    <li><a class="dropdown-procesador" href="./pages/productos.html">Procesadores</a></li>
-                    <li><a class="dropdown-pc" href="./pages/productos.html">Pc pre-armada</a></li>
-                </ul>
-            </li>
+            <li><a href="./pages/productos.html">Productos</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
             <li><a href="./pages/nosotros.html">Nosotros</a></li> 
 
@@ -53,10 +45,10 @@
     <main class="index-main">
 
         <div class="headers">
-            <h1>Ultimos ingresos</h1>
+            <h1>Bamboo PC</h1>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <!-- Posición de imagenes -->
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,13 +57,13 @@
               </div>
               <!-- Imagenes -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="5000">
                   <img src="https://res.cloudinary.com/corsair-pwa/image/upload/v1680719491/akamai/TLC/Global/gaming-pcs-banner_ICUE-CERTIFIED.webp" class="d-block w-100" alt="1">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                   <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/369b28122993217.60e550d56cdb4.jpg" class="d-block w-100" alt="2">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                   <img src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/placa-banner.jpg" class="d-block w-100" alt="3">
                 </div>
               </div>
@@ -90,7 +82,7 @@
 
         <!--Ultimos Ingresos Grid con bootsrap  -->
     <div class="container text-center ingresos">
-
+        <h2>Ultimos Ingresos</h2>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3 ing">
                     <img src="https://dcdn.mitiendanube.com/stores/003/017/462/products/rtx-4090-pny-21-9e45c9f4c5e72d6c8e16809017943005-1024-1024.jpg"
@@ -125,17 +117,6 @@
                 </div>
             </div>
     </div>
-
-    <!-- Boton Whatsapp con Bootsrap -->
-
-        <button type="button" class="btn btn-outline-success position-absolute bottom-5 end-5">
-            Whatsapp
-            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-
-    </main>
 
     <!-- Footer  -->
     <footer class="footer">

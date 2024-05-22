@@ -1,6 +1,13 @@
 /*///////////////////////// Inicio////////////////////////////////////// */
 
 .ingresos {
+    h2 {
+        padding: 40px;
+        font-family: $fuente-secundaria;
+        font-weight: bolder;
+        font-size: 24px;
+        border-bottom: 2px solid #000;
+    }
     .row {
         .ing {
             padding-bottom: 40px;
