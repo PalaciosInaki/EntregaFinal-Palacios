@@ -192,7 +192,9 @@ h1 {
     flex-wrap: wrap;
     justify-content: center; }
     .footer .links-f li {
-      margin: auto; }
+      list-style: none;
+      margin: auto;
+      padding-top: 10px; }
       .footer .links-f li a {
         list-style: none;
         text-decoration: none;
@@ -203,9 +205,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin: auto; }
-    .footer .redes a img {
-      width: 40px;
-      height: 40px; }
+    .footer .redes a {
+      padding-right: 10px; }
+      .footer .redes a img {
+        width: 40px;
+        height: 40px; }
 
 /* ///////////////////////HEADERS//////////////////////////////////*/
 .headers h1 {
