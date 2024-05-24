@@ -140,6 +140,7 @@
     .container-navbar{
         .links{
             flex-direction: column;
+            justify-content: space-between;
             li{
                 padding: 1px;
             }
