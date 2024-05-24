@@ -1,0 +1,18 @@
+.banner{
+    text-align: center;
+    background-image: radial-gradient(circle, #240264, #7111f0);
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    i{
+        color: $yellow-green;
+        padding: 5px;
+    }
+    h5{
+        font-size: 13px;
+        color: white;
+        padding: 5px;
+        font-weight: normal;
+        margin: 0px;
+    }
+}

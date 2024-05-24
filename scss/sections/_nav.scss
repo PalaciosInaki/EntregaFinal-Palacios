@@ -31,7 +31,7 @@
 
         li {
             display: inline-block;
-            padding: 15px;
+            padding: 10px;
 
             a {
                 font-family: "Jersey 25", sans-serif !important;
@@ -93,6 +93,11 @@
             
             }
         }
+        .links{
+            li{
+                padding: 5px;
+            }
+        }
 
     }
 
@@ -133,7 +138,7 @@
     .container-navbar{
         .links{
             li{
-                padding: 4px;
+                padding: 2px;
             }
         }
 

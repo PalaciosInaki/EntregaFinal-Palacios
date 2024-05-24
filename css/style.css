@@ -40,7 +40,7 @@ h1 {
     height: 180px; }
     .container-navbar .links li {
       display: inline-block;
-      padding: 15px; }
+      padding: 10px; }
       .container-navbar .links li a {
         font-family: "Jersey 25", sans-serif !important;
         font-size: 140%;
@@ -78,7 +78,9 @@ h1 {
       margin: auto;
       padding-bottom: 30px; }
       .container-navbar .busqueda input {
-        width: 500px; } }
+        width: 500px; }
+    .container-navbar .links li {
+      padding: 5px; } }
 
 @media (max-width: 715px) {
   .container-navbar {
@@ -93,7 +95,7 @@ h1 {
 
 @media (max-width: 435px) {
   .container-navbar .links li {
-    padding: 4px; }
+    padding: 2px; }
   .container-navbar .busqueda input {
     width: 200px; } }
 
@@ -173,12 +175,13 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
   grid-template-areas: "links-f mencion redes";
-  background-color: #9FCC2E; }
+  background-image: radial-gradient(circle, #240264, #7111f0); }
   .footer .mencion {
     grid-area: mencion;
     display: flex;
     flex-direction: column;
-    margin: auto; }
+    margin: auto;
+    color: #9FCC2E; }
     .footer .mencion h3 {
       text-align: center;
       font-size: 1rem; }
@@ -198,7 +201,7 @@ h1 {
       .footer .links-f li a {
         list-style: none;
         text-decoration: none;
-        color: black;
+        color: #9FCC2E;
         font-weight: bold; }
   .footer .redes {
     grid-area: redes;
@@ -324,3 +327,19 @@ h1 {
     margin: auto; }
   #carouselExampleIndicators .carousel-item img {
     max-height: 700px; }
+
+.banner {
+  text-align: center;
+  background-image: radial-gradient(circle, #240264, #7111f0);
+  height: 25px;
+  display: flex;
+  justify-content: center; }
+  .banner i {
+    color: #9FCC2E;
+    padding: 5px; }
+  .banner h5 {
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+    font-weight: normal;
+    margin: 0px; }
