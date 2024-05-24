@@ -72,13 +72,14 @@
             }
         }
     }
+    
 
 }
 
 /*////////////// //////////////Medias querys ///////////////////////////// */
 /* Mobile last /// Max Width */
 
-@media (max-width: 965px) {
+@media (max-width: 1000px) {
     .container-navbar {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -129,22 +130,24 @@
             }
         }
 
+
     }
 
 
 }
 
-@media (max-width: 435px) {
+@media (max-width: 475px) {
     .container-navbar{
         .links{
+            flex-direction: column;
             li{
-                padding: 2px;
+                padding: 1px;
             }
         }
 
         .busqueda {
             input{
-                width: 200px;
+                width: 250px;
             }
         }
 
@@ -157,7 +160,6 @@
     .container-navbar{
         .links{
             li{
-                padding: 1px;
             }
         }
 

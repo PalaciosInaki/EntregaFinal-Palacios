@@ -3,10 +3,14 @@
 .productos-main {
     h2{
         text-align: center;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     h3{
         text-align: center;
+        border-bottom: 2px solid #000;
+        width: 70%;
+        margin: auto;
+        padding: 10px;
     }
     .productos {
         display: flex;
@@ -26,6 +30,7 @@
             background: white;
             box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
             transition: all 400ms ease;
+            cursor: pointer;
             
             img {
                 height: 280px;
@@ -40,6 +45,7 @@
                 height: 30px;
                 width: 100px;
                 margin-top: 15px;
+                cursor: pointer;
             }
     
         }

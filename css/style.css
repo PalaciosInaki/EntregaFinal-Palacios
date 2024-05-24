@@ -70,7 +70,7 @@ h1 {
 
 /*////////////// //////////////Medias querys ///////////////////////////// */
 /* Mobile last /// Max Width */
-@media (max-width: 965px) {
+@media (max-width: 1000px) {
   .container-navbar {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo links" "busqueda busqueda"; }
@@ -93,23 +93,25 @@ h1 {
   .container-navbar .busqueda input {
     width: 400px; } }
 
-@media (max-width: 435px) {
-  .container-navbar .links li {
-    padding: 2px; }
+@media (max-width: 475px) {
+  .container-navbar .links {
+    flex-direction: column; }
+    .container-navbar .links li {
+      padding: 1px; }
   .container-navbar .busqueda input {
-    width: 200px; } }
-
-@media (max-width: 345px) {
-  .container-navbar .links li {
-    padding: 1px; } }
+    width: 250px; } }
 
 /* ///////////////////////Productos//////////////////////////////////*/
 .productos-main h2 {
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 30px; }
 
 .productos-main h3 {
-  text-align: center; }
+  text-align: center;
+  border-bottom: 2px solid #000;
+  width: 70%;
+  margin: auto;
+  padding: 10px; }
 
 .productos-main .productos {
   display: flex;
@@ -127,7 +129,8 @@ h1 {
     border-radius: 6px;
     background: white;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease; }
+    transition: all 400ms ease;
+    cursor: pointer; }
     .productos-main .productos .prod img {
       height: 280px; }
     .productos-main .productos .prod button {
@@ -138,7 +141,8 @@ h1 {
       border-radius: 5px;
       height: 30px;
       width: 100px;
-      margin-top: 15px; }
+      margin-top: 15px;
+      cursor: pointer; }
   .productos-main .productos .prod:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%); }
@@ -153,7 +157,8 @@ h1 {
 
 .ingresos .row .ing {
   padding-bottom: 40px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  cursor: pointer; }
   .ingresos .row .ing h3 {
     font-size: 1rem; }
   .ingresos .row .ing img {
@@ -167,7 +172,8 @@ h1 {
     border-radius: 5px;
     height: 30px;
     width: 100px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    cursor: pointer; }
 
 /* /////////////////////////////// Footer////////////////////////////// */
 .footer {
@@ -308,7 +314,8 @@ h1 {
           font-size: medium;
           border-radius: 5px;
           height: 30px;
-          width: 100px; }
+          width: 100px;
+          cursor: pointer; }
 
 @media (max-width: 920px) {
   .container-contacto .container-formulario .formulario {
