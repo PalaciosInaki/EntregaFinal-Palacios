@@ -1,18 +1,92 @@
 /* Formulario */
-.container-formulario{
+.container-contacto {
+    margin: auto;
     text-align: center;
     padding: 40px;
-    margin: auto;
-    .formulario{
-        padding: 30px;
+
+    .container-formulario {
         display: flex;
+        flex: wrap;
+        flex-direction: row;
         justify-content: center;
-        .inputs{
+        align-items: center;
+
+        .formulario {
+            padding: 30px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            align-items: center;
+
+            .comentario {
+                background-image: url('../../resources/logoFondoBlanco.png');
+                background-size: cover;
+                /* Ajusta la imagen para que cubra todo el área del textarea */
+                background-repeat: no-repeat;
+                /* Evita que la imagen se repita */
+                background-position: center;
+                /* Centra la imagen de fondo */
+                opacity: 0.5;
+                max-width: 400px;
+                max-height: 400px;
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+
+                input {
+                    font-family: $fuente-secundaria;
+                    padding: 2px;
+                    margin: 5px;
+
+                }
+
+                .enviar {
+                    background-color: black;
+                    font-family: $fuente-secundaria;
+                    color: $yellow-green;
+                    font-size: medium;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 100px;
+                }
+
+            }
 
         }
+
     }
+
+}
+
+
+@media (max-width: 920px){
+    .container-contacto{
+        .container-formulario{
+            .formulario{
+                flex-direction: column;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 480px){
+    .container-contacto{
+        .container-formulario{
+            .formulario{
+                .comentario{
+                    width: 200px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+
+
+
 
 }

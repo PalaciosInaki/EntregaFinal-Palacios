@@ -10,7 +10,7 @@
         font-size: 100%;
         h2{
             text-align: center;
-            padding-bottom: 30px;
+            padding: 30px;
         }
     }
     .mapa{
@@ -30,9 +30,28 @@
 
 @media (max-width: 680px){
     .container-nosotros{
+        .texto-nos{
+            padding: 5px;
+        }
         .mapa{
             iframe{
                 width: auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 380px){
+    .container-nosotros{
+        .texto-nos{
+            padding: 0px;
+            width: 90%;
+        }
+        .mapa{
+            iframe{
+                width: 200px;
+                height: 200px;
             }
         }
     }
